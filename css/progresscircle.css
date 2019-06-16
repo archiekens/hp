@@ -1,0 +1,148 @@
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto',sans-serif;
+}
+.circle-container{
+    position: relative;
+    display: block;
+    height: 170px;
+    width: 120px;
+    /*background-color: #CCCCCC;*/
+}
+
+.circle-out{
+/*    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);*/
+    height: 120px;
+    width: 120px;
+    background: linear-gradient(#00FFFF,#0054FF);
+    border-radius: 50%;
+}
+
+.circle-bevel{
+    position: absolute;
+    top: 0;
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    box-shadow: 0 0 2px 1px rgba(0,0,0,0.5) inset;
+}
+
+.circle-progress-clip{
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    animation-duration: 0.6s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(0.15, 0.6, 0.9, 1.5);
+    animation-play-state: paused;
+    clip-path: polygon(50% 50%, 50% 0%, 100% 0%, 100% 50%, 100% 100%, 50% 100%, 0% 100%, 0% 0%, 50% 0%);
+}
+
+.circle-progress-clip.p90{
+    animation-name: load-skill-90;
+}
+
+.circle-progress-clip.p88{
+    animation-name: load-skill-88;
+}
+
+.circle-progress-clip.p80{
+    animation-name: load-skill-80;
+}
+
+.circle-progress-clip.p75{
+    animation-name: load-skill-75;
+}
+
+.circle-progress-clip.p70{
+    animation-name: load-skill-70;
+}
+
+.circle-in{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    height: 110px;
+    width: 110px;
+    /*background: linear-gradient(#FFFFFF,#E6E6E6);*/
+    background-color: white;
+    /*box-shadow: 0 0 2px 1px rgba(0,0,0,0.25);*/
+    border-radius: 50%;
+    transition: all 0.3s linear;
+}
+
+.circle-progress-text{
+    display: block;
+    color: #404040;
+    text-align: center;
+    line-height: 110px;
+    font-size: 28px;
+}
+
+.circle-progress-text:after{
+    content: '%';
+    font-size: 14px;
+}
+
+.circle-title{
+    margin-top: 10px;
+    font-size: 24px;
+    text-align: center;
+    color: #4D4D4D;
+}
+
+@keyframes load-skill-90{
+    0%{clip-path: polygon(50% 50%, 50% 0%, 100% 0%, 100% 50%, 100% 100%, 50% 100%, 0% 100%, 0% 0%, 50% 0%);}
+    17%{clip-path: polygon(50% 50%, 100% 0%, 100% 0%, 100% 50%, 100% 100%, 50% 100%, 0% 100%, 0% 0%, 50% 0%);}
+    34%{clip-path: polygon(50% 50%, 100% 50%, 100% 50%, 100% 50%, 100% 100%, 50% 100%, 0% 100%, 0% 0%, 50% 0%);}
+    51%{clip-path: polygon(50% 50%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 50% 100%, 0% 100%, 0% 0%, 50% 0%);}
+    68%{clip-path: polygon(50% 50%, 50% 100%, 50% 100%, 50% 100%, 50% 100%, 50% 100%, 0% 100%, 0% 0%, 50% 0%);}
+    85%{clip-path: polygon(50% 50%, 0% 100%, 0% 100%, 0% 100%, 0% 100%, 0% 100%, 0% 100%, 0% 0%, 50% 0%);}
+    100%{clip-path: polygon(50% 50%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 50% 0%);}
+}
+@keyframes load-skill-88{
+    0%{clip-path: polygon(50% 50%, 50% 0%, 100% 0%, 100% 50%, 100% 100%, 50% 100%, 0% 100%, 0% 0%, 50% 0%);}
+    17%{clip-path: polygon(50% 50%, 100% 0%, 100% 0%, 100% 50%, 100% 100%, 50% 100%, 0% 100%, 0% 0%, 50% 0%);}
+    34%{clip-path: polygon(50% 50%, 100% 50%, 100% 50%, 100% 50%, 100% 100%, 50% 100%, 0% 100%, 0% 0%, 50% 0%);}
+    51%{clip-path: polygon(50% 50%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 50% 100%, 0% 100%, 0% 0%, 50% 0%);}
+    68%{clip-path: polygon(50% 50%, 50% 100%, 50% 100%, 50% 100%, 50% 100%, 50% 100%, 0% 100%, 0% 0%, 50% 0%);}
+    85%{clip-path: polygon(50% 50%, 0% 100%, 0% 100%, 0% 100%, 0% 100%, 0% 100%, 0% 100%, 0% 0%, 50% 0%);}
+    100%{clip-path: polygon(50% 50%, 0% 15%, 0% 15%, 0% 15%, 0% 15%, 0% 15%, 0% 15%, 0% 0%, 50% 0%);}
+}
+@keyframes load-skill-80{
+    0%{clip-path: polygon(50% 50%, 50% 0%, 100% 0%, 100% 50%, 100% 100%, 50% 100%, 0% 100%, 0% 0%, 50% 0%);}
+    17%{clip-path: polygon(50% 50%, 100% 0%, 100% 0%, 100% 50%, 100% 100%, 50% 100%, 0% 100%, 0% 0%, 50% 0%);}
+    34%{clip-path: polygon(50% 50%, 100% 50%, 100% 50%, 100% 50%, 100% 100%, 50% 100%, 0% 100%, 0% 0%, 50% 0%);}
+    51%{clip-path: polygon(50% 50%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 50% 100%, 0% 100%, 0% 0%, 50% 0%);}
+    68%{clip-path: polygon(50% 50%, 50% 100%, 50% 100%, 50% 100%, 50% 100%, 50% 100%, 0% 100%, 0% 0%, 50% 0%);}
+    85%{clip-path: polygon(50% 50%, 0% 100%, 0% 100%, 0% 100%, 0% 100%, 0% 100%, 0% 100%, 0% 0%, 50% 0%);}
+    100%{clip-path: polygon(50% 50%, 0% 40%, 0% 40%, 0% 40%, 0% 40%, 0% 40%, 0% 40%, 0% 0%, 50% 0%);}
+}
+@keyframes load-skill-75{
+    0%{clip-path: polygon(50% 50%, 50% 0%, 100% 0%, 100% 50%, 100% 100%, 50% 100%, 0% 100%, 0% 0%, 50% 0%);}
+    17%{clip-path: polygon(50% 50%, 100% 0%, 100% 0%, 100% 50%, 100% 100%, 50% 100%, 0% 100%, 0% 0%, 50% 0%);}
+    34%{clip-path: polygon(50% 50%, 100% 50%, 100% 50%, 100% 50%, 100% 100%, 50% 100%, 0% 100%, 0% 0%, 50% 0%);}
+    51%{clip-path: polygon(50% 50%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 50% 100%, 0% 100%, 0% 0%, 50% 0%);}
+    68%{clip-path: polygon(50% 50%, 50% 100%, 50% 100%, 50% 100%, 50% 100%, 50% 100%, 0% 100%, 0% 0%, 50% 0%);}
+    85%{clip-path: polygon(50% 50%, 0% 100%, 0% 100%, 0% 100%, 0% 100%, 0% 100%, 0% 100%, 0% 0%, 50% 0%);}
+    100%{clip-path: polygon(50% 50%, 0% 50%, 0% 50%, 0% 50%, 0% 50%, 0% 50%, 0% 50%, 0% 0%, 50% 0%);}
+}
+@keyframes load-skill-70{
+    0%{clip-path: polygon(50% 50%, 50% 0%, 100% 0%, 100% 50%, 100% 100%, 50% 100%, 0% 100%, 0% 0%, 50% 0%);}
+    17%{clip-path: polygon(50% 50%, 100% 0%, 100% 0%, 100% 50%, 100% 100%, 50% 100%, 0% 100%, 0% 0%, 50% 0%);}
+    34%{clip-path: polygon(50% 50%, 100% 50%, 100% 50%, 100% 50%, 100% 100%, 50% 100%, 0% 100%, 0% 0%, 50% 0%);}
+    51%{clip-path: polygon(50% 50%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 50% 100%, 0% 100%, 0% 0%, 50% 0%);}
+    68%{clip-path: polygon(50% 50%, 50% 100%, 50% 100%, 50% 100%, 50% 100%, 50% 100%, 0% 100%, 0% 0%, 50% 0%);}
+    85%{clip-path: polygon(50% 50%, 0% 100%, 0% 100%, 0% 100%, 0% 100%, 0% 100%, 0% 100%, 0% 0%, 50% 0%);}
+    100%{clip-path: polygon(50% 50%, 0% 60%, 0% 60%, 0% 60%, 0% 60%, 0% 60%, 0% 60%, 0% 0%, 50% 0%);}
+}
+
+
+
+
