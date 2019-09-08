@@ -57,7 +57,7 @@
 	<link rel="stylesheet" type="text/css" href="css/style-mobile.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<script type="text/javascript" src="scripts/prefixfree.min.js"></script>
-	<link rel="icon" href="icon.png">
+	<link rel="icon" href="/img/icon.png">
 
 	<title>I am Arnold</title>
 
