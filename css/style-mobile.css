@@ -79,7 +79,7 @@
 
      /*BANNER STYLES*/
     #banner{
-		background-image: url('img/bg-banner-tablet.jpg');
+		background-image: url('/img/bg-banner-tablet.jpg');
 		align-items: center;
 		align-content: center;
 	}
@@ -331,7 +331,7 @@
 
      /*BANNER STYLES*/
     #banner{
-		background-image: url('img/bg-banner-tablet.jpg');
+		background-image: url('/img/bg-banner-tablet.jpg');
 		align-items: center;
 		align-content: center;
 	}
@@ -543,7 +543,7 @@
 
 	/*BANNER STYLES*/
 	#banner{
-		background-image: url('img/bg-banner-tablet.jpg');
+		background-image: url('/img/bg-banner-tablet.jpg');
 		align-items: center;
 		align-content: center;
 	}
