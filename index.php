@@ -46,17 +46,17 @@
  ?>
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 
 <head>
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+	<meta name="description" content="Arnold Christopher Fernando's personal website">
 	<link rel="stylesheet" type="text/css" href="css/progresscircle.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/style-mobile.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<script type="text/javascript" src="scripts/prefixfree.min.js"></script>
 	<link rel="icon" href="/img/icon.png">
 
 	<title>I am Arnold</title>
@@ -67,7 +67,7 @@
 <body onscroll="displayNavbar()">
 	<nav id="navbar">
 		<a id="navbar-menu-btn" onclick="displayAnchors()"><i class="fa fa-bars"></i></a>
-		<img id="navbar-logo" src="/img/logo-short-circle.svg">
+		<img alt="AF logo" id="navbar-logo" src="/img/logo-short-circle.svg">
 		<div id="navbar-anchors">
 			<a class="navbar-anchor active" id="anchor-home" onclick="scrollToSection('banner')">HOME</a>
 			<a class="navbar-anchor" id="anchor-about" onclick="scrollToSection('about')">ABOUT</a>
@@ -75,9 +75,9 @@
 			<a class="navbar-anchor" id="anchor-contact" onclick="scrollToSection('contact')">CONTACT ME</a>
 		</div>
 		<div id="navbar-socials">
-			<a class="navbar-social" id="nav-facebook" href="https://www.facebook.com/ArnChr" target="_new"><i class="fa fa-facebook"></i></a>
-			<a class="navbar-social" id="nav-behance" href="#"><i class="fa fa-behance"></i></a>
-			<a class="navbar-social" id="nav-linkedin" href="#"><i class="fa fa-linkedin"></i></a>
+			<a class="navbar-social nav-facebook" href="https://www.facebook.com/ArnChr" target="_blank"><i class="fa fa-facebook"></i></a>
+			<a class="navbar-social nav-behance" href="#"><i class="fa fa-behance"></i></a>
+			<a class="navbar-social nav-linkedin" href="#"><i class="fa fa-linkedin"></i></a>
 		</div>
 	</nav>
 	<section class="container" id="banner">
@@ -161,37 +161,37 @@
 	<section class="container" id="projects">
 		<h2 class="section-header" id="header-projects">PROJECTS</h2>
 		<div id="projects-container">
-			<a class="project" id="project-coedsris" href="img/projects/project-coedsris.jpg" target="_new">
+			<a class="project" id="project-coedsris" href="img/projects/project-coedsris.webp" target="_blank">
 				<div class="project-details">
 					<span class="project-name">COEDSRIS</span>
 					<span class="project-tags">code, css, asp.net</span>
 				</div>
 			</a>
-			<a class="project" id="project-hebrews" href="img/projects/project-hebrews.jpg" target="_new">
+			<a class="project" id="project-hebrews" href="img/projects/project-hebrews.webp" target="_blank">
 				<div class="project-details">
 					<span class="project-name">HeBrews</span>
 					<span class="project-tags">ui design, code, vb.net</span>
 				</div>
 			</a>
-			<a class="project" id="project-medimagic" href="img/projects/project-medimagic.jpg" target="_new">
+			<a class="project" id="project-medimagic" href="img/projects/project-medimagic.webp" target="_blank">
 				<div class="project-details">
 					<span class="project-name">MediMagic</span>
 					<span class="project-tags">ui design, code, vb.net</span>
 				</div>
 			</a>
-			<a class="project" id="project-peslms" href="img/projects/project-peslms.jpg" target="_new">
+			<a class="project" id="project-peslms" href="img/projects/project-peslms.webp" target="_blank">
 				<div class="project-details">
 					<span class="project-name">PESLMS</span>
 					<span class="project-tags">code, vb.net</span>
 				</div>
 			</a>
-			<a class="project" id="project-rtuaec" href="img/projects/project-rtuaec.jpg" target="_new">
+			<a class="project" id="project-rtuaec" href="img/projects/project-rtuaec.webp" target="_blank">
 				<div class="project-details">
 					<span class="project-name">RTU AEC</span>
 					<span class="project-tags">code, vb.net</span>
 				</div>
 			</a>
-			<a class="project" id="project-icons" href="img/projects/project-icons.jpg" target="_new">
+			<a class="project" id="project-icons" href="img/projects/project-icons.webp" target="_blank">
 				<div class="project-details">
 					<span class="project-name">Logo Design</span>
 					<span class="project-tags">logo design</span>
@@ -205,8 +205,7 @@
 				<h2 class="section-header" id="header-contact">CONTACT ME</h2>
 				<span id="mail-subtext">Interested? Leave a message!</span>
 				<form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
-					<textarea id="mail-message" name="message" placeholder="Hey Arnold!"
-					value="<?php isset($_POST['message']) ? $message : ''; ?>" onclick="displayMail()"></textarea>
+					<textarea id="mail-message" name="message" placeholder="Hey Arnold!" onclick="displayMail()"><?php isset($_POST['message']) ? $message : ''; ?></textarea>
 					<div id="mail-details">
 						<input type="text" name="name" placeholder="Your Name" value="<?php isset($_POST['name']) ? $name : ''; ?>">
 						<input type="text" name="email" placeholder="Email Address" value="<?php isset($_POST['email']) ? $email : ''; ?>">
@@ -219,19 +218,21 @@
 				<div id="contact-details">
 					<span id="mobile"><i class="fa fa-mobile-phone"></i>+639218931684</span>
 					<a id="email" href="mailto:Fernando_ArnoldC@yahoo.com.ph" target="_top"><i class="fa fa-envelope"></i>Fernando_ArnoldC@yahoo.com.ph</a>
-					<a id="resume" href="files/ArnoldChristopherFernando.pdf" target="_new"><i class="fa fa-download"></i>View/download my resume</a>
+					<a id="resume" href="files/ArnoldChristopherFernando.pdf" target="_blank"><i class="fa fa-download"></i>View/download my resume</a>
 				</div>
 				<div id="footer-socials">
-					<a class="navbar-social" id="nav-facebook" href="https://www.facebook.com/ArnChr" target="_new"><i class="fa fa-facebook"></i></a>
-					<a class="navbar-social" id="nav-behance" href="#"><i class="fa fa-behance"></i></a>
-					<a class="navbar-social" id="nav-linkedin" href="#"><i class="fa fa-linkedin"></i></a>
+					<a class="navbar-social nav-facebook" href="https://www.facebook.com/ArnChr" target="_blank"><i class="fa fa-facebook"></i></a>
+					<a class="navbar-social nav-behance" href="#"><i class="fa fa-behance"></i></a>
+					<a class="navbar-social nav-linkedin" href="#"><i class="fa fa-linkedin"></i></a>
 				</div>
 			</div>
 		</div>
 		<span id="copyright">Designed by Arnold Christopher Fernando | Copyright 2017 - <?= date('Y'); ?></span>
 	</footer>
 
-	<script type="text/javascript" src="scripts/script.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="scripts/prefixfree.min.js"></script>
+	<script src="scripts/script.js"></script>
 	<?php if ($mailClass!='') {echo '<script>document.getElementById("mail-message").focus();</script>';}?>
 </body>
 
