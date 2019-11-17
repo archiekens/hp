@@ -216,7 +216,7 @@ a{
 	justify-content: center;
 	align-items: flex-end;
 	margin-left: 50px;
-	max-width: 500px;
+	width: 500px;
 	text-align: justify;
 }
 

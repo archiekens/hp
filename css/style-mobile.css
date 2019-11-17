@@ -105,10 +105,12 @@
      	margin-left: 0;
      	align-items: center;
 		align-content: center;
+        width: auto;
+        max-width: 500px;
     }
 
     #banner-desc{
-    	text-align: justify;
+    	text-align: center;
      	max-width: 217px;
      	align-self: center;
      	margin-top: 30px;
@@ -180,7 +182,7 @@
      	align-items: center;
      	align-content: center;
      	padding: 55px;
-     	padding-top: 20px;
+     	padding-top: 50px;
     }
 
     #projects-container{
@@ -354,6 +356,8 @@
 
     #banner-contents{
      	margin-left: 0;
+        width: auto;
+        max-width: 500px;
     }
 
     #banner-desc{
