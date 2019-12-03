@@ -3,9 +3,9 @@ var mailShown = false;
 var navbarMobile = false;
 
 
-document.addEventListener('DOMContentLoaded', function backgroundLoaded() {
+window.onload = function() {
     document.getElementById('banner-title').className += ' start';
-});
+};
 
 function displayNavbar(){
 	var currentScroll = window.pageYOffset;
