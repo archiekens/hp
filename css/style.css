@@ -228,6 +228,11 @@ a{
 	animation-name: fade-in-title;
 	animation-fill-mode: forwards;
 	animation-timing-function: cubic-bezier(0.33, 0.99, 0.76, 1);
+	animation-play-state: paused;
+}
+
+#banner-title.start>*{
+	animation-play-state: running;
 }
 
 #banner-question{
