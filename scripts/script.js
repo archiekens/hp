@@ -2,6 +2,11 @@ var navbarShown = false;
 var mailShown = false;
 var navbarMobile = false;
 
+
+window.onload = function() {
+    document.getElementById('banner-title').className += ' start';
+};
+
 function displayNavbar(){
 	var currentScroll = window.pageYOffset;
 	var navbar = document.getElementById('navbar');
