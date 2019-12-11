@@ -199,7 +199,7 @@ a{
 
 #banner{
 	min-height: 120vh;
-	background-image: url('/docs/img/bg-banner.webp');
+	background-image: url('/img/bg-banner.webp');
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -411,7 +411,7 @@ a{
 /*PROJECTS STYLES*/
 #projects{
 	padding: 100px 100px;
-	background-image: url('/docs/img/bg-projects.webp');
+	background-image: url('/img/bg-projects.webp');
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -484,27 +484,27 @@ a{
 }
 
 #project-coedsris{
-	background-image: url('/docs/img/projects/thumbs/project-coedsris-thumb.webp');
+	background-image: url('/img/projects/thumbs/project-coedsris-thumb.webp');
 }
 
 #project-icons{
-	background-image: url('/docs/img/projects/thumbs/project-icons-thumb.webp');
+	background-image: url('/img/projects/thumbs/project-icons-thumb.webp');
 }
 
 #project-hebrews{
-	background-image: url('/docs/img/projects/thumbs/project-hebrews-thumb.webp');
+	background-image: url('/img/projects/thumbs/project-hebrews-thumb.webp');
 }
 
 #project-medimagic{
-	background-image: url('/docs/img/projects/thumbs/project-medimagic-thumb.webp');
+	background-image: url('/img/projects/thumbs/project-medimagic-thumb.webp');
 }
 
 #project-peslms{
-	background-image: url('/docs/img/projects/thumbs/project-peslms-thumb.webp');
+	background-image: url('/img/projects/thumbs/project-peslms-thumb.webp');
 }
 
 #project-rtuaec{
-	background-image: url('/docs/img/projects/thumbs/project-rtuaec-thumb.webp');
+	background-image: url('/img/projects/thumbs/project-rtuaec-thumb.webp');
 }
 
 /*PROJECT ANIMATIONS*/
